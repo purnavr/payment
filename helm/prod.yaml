@@ -2,3 +2,11 @@ env: prod
 component: payment
 params: "CART_HOST:prod.payment.cart_host,CART_PORT:prod.payment.cart_port,USER_HOST:prod.payment.user_host,USER_PORT:prod.payment.user_port,AMQP_HOST:prod.payment.ampq_host,AMQP_USER:prod.payment.ampq_user,AMQP_PASS:prod.payment.ampq_pass"
 
+
+resources:
+  limits:
+    cpu: 700m
+    memory: 1024Mi
+  requests:
+    cpu: 600m
+    memory: 512Mi
